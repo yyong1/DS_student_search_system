@@ -1,6 +1,6 @@
-package org.example.sort;
+package org.example.studentSearchV1.sort;
 
-import org.example.Student;
+import org.example.studentSearchV1.Student;
 
 public class MergeSort extends AbstractSort {
 

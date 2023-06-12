@@ -1,4 +1,4 @@
-package org.example.sort;
+package org.example.studentSearchV1.sort;
 
 public abstract class AbstractSort {
 
