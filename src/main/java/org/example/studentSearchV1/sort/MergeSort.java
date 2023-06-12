@@ -4,13 +4,11 @@ import org.example.studentSearchV1.Student;
 
 public class MergeSort extends AbstractSort {
 
-    /* Merge sort algorithm (public invocation) */
     public static void sort(Student[] students) {
         Student[] aux = new Student[students.length];
         sort(students, aux, 0, students.length - 1);
     }
 
-    /* Recursive merge sort logic */
     private static void sort(Student[] students, Student[] aux, int low, int high) {
         if (high <= low) {
             return;
@@ -22,7 +20,6 @@ public class MergeSort extends AbstractSort {
         merge(students, aux, low, mid, high);
     }
 
-    /* Merge the two sorted sub-arrays into a larger sorted (sub)array */
     private static void merge(Student[] students, Student[] aux, int low, int mid, int high) {
         for (int k = low; k <= high; k++) {
             aux[k] = students[k];
