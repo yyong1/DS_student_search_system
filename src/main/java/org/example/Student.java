@@ -2,6 +2,7 @@
 package org.example;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class Student implements Comparable<Student> {
     public int studentID;
@@ -11,7 +12,7 @@ public class Student implements Comparable<Student> {
     public String departmentCode;
     public String departmentName;
     public int enrolmentYear;
-
+    private static final DateTimeFormatter DATE_FORMAT = DateTimeFormatter.ofPattern("dd-MM-yyyy");
     public Student(
             int studentID,
             String fullName,
