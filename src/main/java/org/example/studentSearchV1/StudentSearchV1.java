@@ -7,6 +7,11 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class StudentSearchV1 {
+
+//    Expected data CSV
+//    1053337;Hershel Breitenberg;26-05-1997;Global University of United States;BUS;Business;2020
+//    7090334;Nikola Adamić;22-02-1992;Global University of Croatia;AM;Applied Mathematics;2016
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the path (absolute path) to the input file: ");
